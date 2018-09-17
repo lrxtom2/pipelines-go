@@ -24,6 +24,7 @@ steps:
   displayName: 'Set up the Go workspace'
 
 - script: |
+    echo $TF_ACC
     go version
     go get -v -t -d ./...
     if [ -f Gopkg.toml ]; then
